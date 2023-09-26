@@ -11,8 +11,11 @@ botones.forEach(boton =>{
         }else if(boton.id == 'borrar'){
             pantalla.textContent = pantalla.textContent.slice(o,-1)
         }else if(pantalla.textContent==''&& boton.id=='='){
+
             pantalla.textContent= 'Vacio!';
             setTimeout(()=>(pantalla.textContent=''),2000);
+        }else if(pantalla.textContent!=="cosa"){
+            Tucomando;
         }else{
             pantalla.textContent += boton.id;
         }
